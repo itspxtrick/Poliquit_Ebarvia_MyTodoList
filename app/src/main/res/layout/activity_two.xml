@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    tools:context="com.patrick.mytodolist.ActivityTwo">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_alignBottom="@+id/taskEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Deadline: "
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_below="@+id/task"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/taskEdit"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="102dp"
+        android:layout_toRightOf="@+id/task"
+        android:text="SCL 9 Quiz"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/deadEdit"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/deadline"
+        android:layout_toEndOf="@+id/title"
+        android:layout_toRightOf="@+id/title"
+        android:inputType="date"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deadline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="CREATE"
+        android:onClick="taskCreate"/>
+</RelativeLayout>
